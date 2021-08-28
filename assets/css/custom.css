@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Satisfy&display=swap');
+
+h1, h2 {
+    text-align: center;
+}
+
+#content {
+    margin-top: 40px;
+}
+.remove-tweet,
+.remove-tweet:hover {
+    float: right;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+li {
+    padding: 5px 20px;
+    background-color: lightskyblue;
+    border-radius: 3px;
+    font-size: 27px;
+    font-family: 'Satisfy', cursive;
+    position: relative;
+}
+
+.to-do {
+    font-family: 'Roboto', sans-serif;
+}
+
+.far {
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 15px
+}
