@@ -38,6 +38,9 @@ function removeFromLocalStorage(tweet) { // remove the 'to do' item from localSt
             twtArr.splice(twtArr.indexOf(twt), 1);
             let twtArrAfterRemove = JSON.stringify(twtArr);
             localStorage.setItem('names', twtArrAfterRemove);
+            if (twtArr.length === 0) {
+                localStorage.clear();
+            }
         }
     }
 }
