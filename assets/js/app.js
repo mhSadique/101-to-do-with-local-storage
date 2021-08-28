@@ -16,7 +16,7 @@ document.body.addEventListener('click', handleRemove);
 document.body.addEventListener('keydown', handleKeyDown);
 
 function handleKeyDown(e) {
-    if (e.code === 'Enter') { // add to do if 'Enter' button is pressed
+    if (e.code === 'Enter') { // add 'to do' if 'Enter' button is pressed
         handleSubmit();
     }
 }
@@ -38,9 +38,9 @@ function removeFromLocalStorage(tweet) { // remove the 'to do' item from localSt
             twtArr.splice(twtArr.indexOf(twt), 1);
             let twtArrAfterRemove = JSON.stringify(twtArr);
             localStorage.setItem('names', twtArrAfterRemove);
-            if (twtArr.length === 0) {
-                localStorage.clear();
-            }
+            // if (twtArr.length === 0) {
+            //     localStorage.clear();
+            // }
         }
     }
 }
