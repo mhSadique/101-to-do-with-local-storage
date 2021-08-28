@@ -45,7 +45,8 @@ function removeFromLocalStorage(tweet) { // remove the 'to do' item from localSt
     }
 }
 
-function handleSubmit() {
+function handleSubmit(e) {
+    e.preventDefault();
     const tweet = document.getElementById('tweet').value;
     const li = document.createElement('li');
     if (tweet !== '' && !tweet.includes('\n')) { 
