@@ -17,7 +17,7 @@ document.body.addEventListener('keydown', handleKeyDown);
 
 function handleKeyDown(e) {
     if (e.code === 'Enter') { // add 'to do' if 'Enter' button is pressed
-        handleSubmit();
+        handleSubmit(e);
     }
 }
 
